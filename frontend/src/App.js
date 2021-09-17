@@ -14,8 +14,8 @@ function App() {
 
   useEffect(() => {
     fetch('/hello').then(res => res.json()).then(data => {
-      setPlaceholder(process.env.REACT_APP_API_URL);
-      // setPlaceholder(data.result);
+      // setPlaceholder(process.env.REACT_APP_API_URL);
+      setPlaceholder(data.result);
     });
   }, []);
 
