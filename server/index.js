@@ -1,5 +1,7 @@
 // server/index.js
 
+const minter = require("../scripts/mint-nft.js");
+
 const express = require("express");
 
 const PORT = process.env.PORT || 3001;
@@ -13,7 +15,9 @@ app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 // Handle GET requests to /api route
 app.post("/api/nft", (req, res) => {
-  res.json({ message: "Hello from server!" });
+  let resp = minter.mintNFT("https://gateway.pinata.cloud/ipfs/Qmd1vsn5NVpwWsxWgnbRDadWCm5HykfS77XgWg7jyeBmCE");
+  console.log(resp);
+  res.json({ message: resp });
 });
 
 // Handle GET requests to /api route
