@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import HomePage from "./HomePage/homepage";
 import BackstoryPage from "./BackstoryPage/backstorypage";
@@ -37,20 +38,21 @@ function App() {
 
   return (
     <div className="App">
-      <HomePage />
-        <hr />
+      {/*<HomePage />*/}
+      {/*  <hr />*/}
       <BackstoryPage />
-        <hr />
-        <div>
-            Button to mint:
-            <button type="button" onClick={mint}>Mint</button>
-        </div>
-        <hr />
-      <RoadmapPage />
-        <hr />
-      <FAQPage />
-        <hr />
-      <TeamPage />
+      {/*  <hr />*/}
+      {/*  <div>*/}
+      {/*      Button to mint:*/}
+      {/*      <button type="button" onClick={mint}>Mint</button>*/}
+      {/*  </div>*/}
+      {/*  <hr />*/}
+      {/*<RoadmapPage />*/}
+      {/*  <hr />*/}
+      {/*<FAQPage />*/}
+      {/*  <hr />*/}
+      {/*<TeamPage />*/}
+
     </div>
   );
 }

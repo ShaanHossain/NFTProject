@@ -48,17 +48,56 @@
   src: local('Beachday'), url('../src/assets/fonts/beachday.ttf') format('truetype');
 }
 
+html {
+  margin: 0px;
+  height: 100%;
+}
+
+button {
+  background-size: cover;
+  background-color: transparent;
+}
+
 /*HomePage*/
 #home-page {
-  background-image: url('../src/assets/castle-image.jpg')
+  background-image: url('../src/assets/castle-image.jpg');
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
 }
 .tabLink {
-  font-family: "Beachday", serif;
+  font-family: "Pirate", serif;
+  color: #B76E79;
+}
+#logo-tabLink {
+  background-image: url('../src/assets/sign.png');
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.paragraphTitle {
+  font-family: "Beachday";
+  font-size: 3rem;
+}
+
+.paragraphContent {
+  font-family: "Beachday";
+  font-size: 1rem;
+
 }
 
 /*Backstory*/
 #backstory-page {
   background-image: url('../src/assets/chest-background.png');
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
 }
 
 /*Roadmap*/
