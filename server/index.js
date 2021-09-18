@@ -15,9 +15,9 @@ app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 // Handle GET requests to /api route
 app.post("/api/nft", (req, res) => {
-  let resp = minter.mintNFT("https://gateway.pinata.cloud/ipfs/Qmd1vsn5NVpwWsxWgnbRDadWCm5HykfS77XgWg7jyeBmCE");
-  console.log(resp);
-  res.json({ message: resp });
+  //let resp = minter.mintNFT("https://gateway.pinata.cloud/ipfs/Qmd1vsn5NVpwWsxWgnbRDadWCm5HykfS77XgWg7jyeBmCE");
+  //console.log(resp);
+  res.json({ message: "hello" });
 });
 
 // Handle GET requests to /api route
