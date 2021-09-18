@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+/*Backstory*/
+#backstory-page {
+  background-image: url('../src/assets/chest-background.png');
+}
+
+/*Roadmap*/
+#roadmap-map {
+  background-image: url('../src/assets/map.png');
+}
