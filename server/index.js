@@ -12,6 +12,11 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 // Handle GET requests to /api route
+app.post("/api/nft", (req, res) => {
+  res.json({ message: "Hello from server!" });
+});
+
+// Handle GET requests to /api route
 app.get("/api", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
