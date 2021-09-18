@@ -10,7 +10,7 @@
   },
   "proxy": "http://localhost:3001",
   "keywords": [],
-  "author": "Shaan Hossain",
+  "author": "Shaan Hossain and Henry Stachowiak",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
