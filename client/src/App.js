@@ -1,22 +1,36 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useState, useEffect } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import HomePage from "./HomePage/homepage";
+import BackstoryPage from "./BackstoryPage/backstorypage";
+import RoadmapPage from "./RoadMapPage/roadmappage";
+import FAQPage from "./FAQPage/faqpage";
+import TeamPage from "./TeamPage/teampage";
 
 function App() {
-  const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
+  var dotenv = require('dotenv')
+  var dotenvExpand = require('dotenv-expand')
+
+  var myEnv = dotenv.config()
+  dotenvExpand(myEnv)
+
+  const [placeholder, setPlaceholder] = useState('Hi');
+
+  useEffect(() => {
+    fetch('/hello').then(res => res.json()).then(data => {
+      // setPlaceholder(process.env.REACT_APP_API_URL);
+      setPlaceholder(data.result);
+    });
   }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-      </header>
+      <HomePage />
+      <BackstoryPage />
+      <RoadmapPage />
+      <FAQPage />
+      <TeamPage />
     </div>
   );
 }
