@@ -1,2 +1,6 @@
 #secrets
 /.env
+
+#idea files
+/.idea
+/.DS_Store
