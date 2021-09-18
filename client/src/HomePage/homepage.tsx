@@ -14,6 +14,7 @@ const HomePage: React.FC<HomePageProps> = props => {
 
     return (
         <div id="home-page" className="container">
+
             {/*Tabs*/}
             <div className="row justify-content-between mb-10">
                 {/*<div className="col"></div>*/}

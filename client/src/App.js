@@ -52,6 +52,7 @@ function App() {
       {/*<FAQPage />*/}
       {/*  <hr />*/}
       {/*<TeamPage />*/}
+
     </div>
   );
 }
