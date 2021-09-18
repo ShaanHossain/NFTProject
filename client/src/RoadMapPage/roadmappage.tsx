@@ -11,8 +11,7 @@ const RoadmapPage: React.FC<RoadmapPageProps> = props => {
     }
     const roadMap20 = {
         percentage: 20,
-        reward: 'We donate 10% of our net mint to the following charities: Henry charity, Shaan charity' +
-            'Henry is passionate about X and Shaan is passionate about X.'
+        reward: "We donate 10% of our net mint to the following charities: Henry's charity, Shaan's charity"
     }
     const roadMap30 = {
         percentage: 30,
@@ -24,7 +23,7 @@ const RoadmapPage: React.FC<RoadmapPageProps> = props => {
     }
     const roadMap50 = {
         percentage: 50,
-        reward: '50% of royalties from secondary sales on Opensea will return to dolphin holders. More information to come in the future!\n'
+        reward: '50% of royalties from secondary sales on OpenSea will return to dolphin holders. More information to come in the future!\n'
     }
     const roadMap75 = {
         percentage: 75,
@@ -43,18 +42,21 @@ const RoadmapPage: React.FC<RoadmapPageProps> = props => {
     }
     // @ts-ignore
     const renderAllRoadMapItems = () => (
-            <div>
-                // @ts-ignore
-                {roadMapItems.forEach((roadmap) => {
-                    renderRoadMapItem(roadmap);
-                })}
-            </div>
+        <div>
+            {/*@ts-ignore*/}
+            {roadMapItems.map((roadmap: { percentage: any; reward: any }) => <li>{renderRoadMapItem(roadmap)}</li>)}
+        </div>
     )
 
     return (
         <div id="roadmap-page">
-            <div id="roadmap-map">
-                {renderAllRoadMapItems()}
+            <p className="h1 beachFont mt-2 mb-3 roadmapTitle">Treasure Map</p>
+            <p className="beachFont mb-5 roadmapParagraph">Our dolphins don't really care about money... so they will be giving back some of the wealth they found back to their community of fans!</p>
+            <div id="roadmap-map" className="container mt-1">
+                <ul>
+                    {renderAllRoadMapItems()}
+                </ul>
+                {/*{roadMapItems.map((roadmap: { percentage: any; reward: any }) => {renderRoadMapItem(roadmap)})}*/}
             </div>
         </div>
     )

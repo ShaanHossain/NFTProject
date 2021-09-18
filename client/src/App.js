@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       {/*<HomePage />*/}
       {/*  <hr />*/}
-      <BackstoryPage />
+      {/*<BackstoryPage />*/}
       {/*  <hr />*/}
       {/*  <div>*/}
       {/*      Button to mint:*/}
@@ -51,7 +51,7 @@ function App() {
       {/*  <hr />*/}
       {/*<FAQPage />*/}
       {/*  <hr />*/}
-      {/*<TeamPage />*/}
+      <TeamPage />
     </div>
   );
 }
