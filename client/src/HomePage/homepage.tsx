@@ -10,7 +10,7 @@ const HomePage: React.FC<HomePageProps> = props => {
     const introParagraphText = '9010 Dolphins chilling in an enormous sunken castle. A limited NFT collection where the token doubles as a membership to the lax dolphin lagoon. Dolphins are minted as ERC-721 tokens. Each of these cost .04 ETH to mint.'
 
     return (
-        <div>
+        <div id="home-page">
             {/*Tabs*/}
             <div>
                 <TabLink label="Backstory" path="#"/>
