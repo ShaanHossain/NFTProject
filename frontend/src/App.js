@@ -24,12 +24,32 @@ function App() {
     });
   }, []);
 
+
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: 'Fetch Mint Example' })
+    };
+  const mint = async () => {
+      const data = await fetch('App/nft', requestOptions);
+      alert(data);
+  }
+
   return (
     <div className="App">
       <HomePage />
+        <hr />
       <BackstoryPage />
+        <hr />
+        <div>
+            Button to mint:
+            <button type="button" onClick={mint}>Mint</button>
+        </div>
+        <hr />
       <RoadmapPage />
+        <hr />
       <FAQPage />
+        <hr />
       <TeamPage />
     </div>
   );

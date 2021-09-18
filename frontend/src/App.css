@@ -37,6 +37,25 @@
   }
 }
 
+/*Fonts*/
+@font-face {
+  font-family: "Pirate";
+  src: local('Pirate'), url('../src/assets/fonts/pirate.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Beachday";
+  src: local('Beachday'), url('../src/assets/fonts/beachday.ttf') format('truetype');
+}
+
+/*HomePage*/
+#home-page {
+  background-image: url('../src/assets/castle-image.jpg')
+}
+.tabLink {
+  font-family: "Beachday", serif;
+}
+
 /*Backstory*/
 #backstory-page {
   background-image: url('../src/assets/chest-background.png');
