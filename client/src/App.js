@@ -7,6 +7,8 @@ import BackstoryPage from "./BackstoryPage/backstorypage";
 import RoadmapPage from "./RoadMapPage/roadmappage";
 import FAQPage from "./FAQPage/faqpage";
 import TeamPage from "./TeamPage/teampage";
+import Footer from "./footer";
+import JoinDiscordBanner from "./join_discord_banner";
 
 function App() {
 
@@ -51,7 +53,9 @@ function App() {
       {/*  <hr />*/}
       {/*<FAQPage />*/}
       {/*  <hr />*/}
-      <TeamPage />
+      {/*<TeamPage />*/}
+        <JoinDiscordBanner/>
+      {/*  <Footer/>*/}
     </div>
   );
 }

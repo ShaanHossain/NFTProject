@@ -154,3 +154,22 @@ button {
 .team-member {
   flex-shrink: 1;
 }
+
+/*Discord Banner*/
+#join-discord-banner {
+  background-image: url('../src/assets/dolphin-blurb.png');
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}

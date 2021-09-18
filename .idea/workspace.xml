@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f5b7fe5-78d4-4cb6-893f-e4cc806447bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/TeamPage/twitter_link.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/ButtonImages/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/dolphins/baked-dolphin.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/dolphins/galaxy-dolphin.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/dolphins/henry-dolphin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/dolphins/patrick-dolphin2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/dolphins/ryan-dolphin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/dolphins/shaan-dolphin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/ButtonImages/discord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/dolphin-blurb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/board-user.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/login.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/register.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/join_discord_banner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/services/auth-header.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/services/user.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/HomePage/homepage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/HomePage/homepage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/RoadMapPage/roadmap_item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RoadMapPage/roadmap_item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/RoadMapPage/roadmappage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RoadMapPage/roadmappage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/TeamPage/team_member.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/TeamPage/team_member.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/TeamPage/teampage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/TeamPage/teampage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/sign.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/ButtonImages/sign.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -61,7 +62,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets/dolphins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets/ButtonImages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -72,23 +73,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/assets/dolphins" />
       <recent name="$PROJECT_DIR$/client/src/assets/ButtonImages" />
+      <recent name="$PROJECT_DIR$/client/src/assets/dolphins" />
       <recent name="$PROJECT_DIR$/client/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/assets/ButtonImages" />
       <recent name="$PROJECT_DIR$/client/src/assets" />
+      <recent name="$PROJECT_DIR$/client/src/assets/ButtonImages" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,6 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631987686939</updated>
       <workItem from="1631987688105" duration="14414000" />
+      <workItem from="1632004461683" duration="4364000" />
     </task>
     <servers />
   </component>
@@ -119,5 +123,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
