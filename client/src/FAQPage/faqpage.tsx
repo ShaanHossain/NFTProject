@@ -27,12 +27,15 @@ const FAQPage: React.FC<FAQPageProps> = props => {
 
     const faqList = [question1, question2, question3, question4, question5];
 
+    const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
+
+
     const frequentlyAskedQuestion = (question: string, answer: string, idx: number) => {
         const newId = `#collapse${idx}`;
         return (
             <div className="mt-5">
                 <p>
-                    <button className="faqButton btn btn-primary beachFont" type="button" data-bs-toggle="collapse" data-bs-target={newId} aria-expanded="false" aria-controls={newId}>
+                    <button className="faqButton btn btn-primary beachFont paragraphContent2" type="button" data-bs-toggle="collapse" data-bs-target={newId} aria-expanded="false" aria-controls={newId}>
                         {question}
                     </button>
                 </p>
@@ -49,7 +52,7 @@ const FAQPage: React.FC<FAQPageProps> = props => {
             <div id="faq-page" className="d-flex justify-content-center align-items-center">
                 <div>
                     <div>
-                        <p className="title mb-5">Frequently Asked Questions:</p>
+                        <p className="paragraphTitle3 mb-5">Frequently Asked Questions:</p>
                     </div>
                     <hr/>
                     <div className="accordion container" id="accordionFAQ">
@@ -59,7 +62,7 @@ const FAQPage: React.FC<FAQPageProps> = props => {
                             )
                         })}
                     </div>
-                </div>
+            </div>
         </div>
     )
 }
