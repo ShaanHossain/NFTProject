@@ -65,65 +65,118 @@ button {
   background-color: transparent;
 }
 
-/*HomePage*/
-#home-page {
-  background-image: url('../src/assets/castle-image.jpg');
-  background-size: cover;
-  position:absolute;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  left:0px;
+.btn-xlarge {
+  padding: 18px 28px;
+  font-size: 4rem;
+  line-height: normal;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
-.tabLink {
-  font-family: "Pirate", serif;
-  color: #B76E79;
-}
-#logo-tabLink {
-  background-image: url('../src/assets/ButtonImages/sign.png');
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.paragraphTitle {
+
+.title {
   font-family: "Beachday";
   font-size: 3rem;
 }
 
-.paragraphContent {
+.title2 {
+  font-family: "Beachday";
+  font-size: 2rem;
+}
+
+.textContent {
   font-family: "Beachday";
   font-size: 1rem;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/*HomePage*/
+#home-page {
+  background-image: url('../src/assets/castle-image.jpg');
+  background-size: cover;
+  height: 100%;
+}
+#tabs {
+  flex: 1;
+}
+#intro {
+  flex:1
+}
+
+.tabLink {
+  font-family: "Pirate", serif;
+  font-size: 2.75rem;
+  /*color: #B76E79;*/
+}
+#logo-tabLink {
+  background-image: url('../src/assets/ButtonImages/sign.png');
+  background-size: cover;
+  width: 5%;
+  z-index: 1;
+}
+.paragraphTitle2 {
+  font-family: "Beachday";
+  font-size: 10rem;
+}
+
+.paragraphContent2 {
+  font-family: "Beachday";
+  font-size: 3rem;
+}
+
+.paragraphTitle {
+  font-family: "Beachday";
+  font-size: 6rem;
+}
+
+.paragraphContent {
+  font-family: "Beachday";
+  font-size: 2rem;
+}
+
+.paragraphTitlePirate {
+  font-family: "Pirate";
+  font-size: 6rem;
+}
+
+.paragraphContentPirate {
+  font-family: "Pirate";
+  font-size: 1.2rem;
+}
+
+.bioTitle {
+  font-family: "Beachday";
+  font-size: 4rem;
+}
+.bioContent {
+  font-family: "Beachday";
+  font-size: 1.3rem;
 }
 
 /*Backstory*/
 #backstory-page {
   background-image: url('../src/assets/chest-background.png');
   background-size: cover;
-  position:absolute;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  left:0px;
+  height: 100%;
+}
+
+#backstory-text {
 }
 
 /*Roadmap*/
 #roadmap-page {
   background-image: url('../src/assets/sand-gradient-background.png');
-  background-size: cover;
-  position:absolute;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  left:0px;
+  background-position: center top;
+  background-size: 100% auto;
 }
 
 #roadmap-map {
   background-image: url('../src/assets/map.png');
-  position:absolute;
-  top:150px;
-  right:0px;
-  bottom:0px;
-  left:0px;
+  background-size: cover;
+  height: 80%;
 }
 
 .roadmapTitle {
@@ -138,18 +191,25 @@ button {
   font-family: "Pirate";
 }
 .percentage {
-  font-size: 2rem;
+  font-size: 4rem;
+}
+
+/*FAQ Page*/
+
+
+
+/*Box*/
+#box-page {
+  background-image: url('../src/assets/sand-gradient-background.png');
+  background-position: center top;
+  background-size: 100% auto;
 }
 
 /*Team*/
 #team-page {
   background-image: url('../src/assets/sand-gradient-background.png');
-  background-size: cover;
-  position:absolute;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  left:0px;
+  background-position: center top;
+  background-size: 100% auto;
 }
 .team-member {
   flex-shrink: 1;
@@ -159,11 +219,15 @@ button {
 #join-discord-banner {
   background-image: url('../src/assets/dolphin-blurb.png');
   background-size: cover;
-  position:absolute;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  left:0px;
+  width: 100%;
+}
+#discord-invite {
+  max-width: 130%;
+  max-height: 130%;
+}
+
+.added-items {
+  float: left;
 }
 
 .vertical-center {
@@ -172,4 +236,32 @@ button {
 
   display: flex;
   align-items: center;
+}
+
+.gif-container {
+  position: relative;
+}
+
+#gif-frame {
+  position: absolute;
+  z-index: 2;
+}
+
+#dolphin-flash-gif {
+  position: absolute;
+}
+
+#dolphin-gif {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.collapseBody {
+  background-image: url('../src/assets/sand.jpg');
+  background-size: cover;
+}
+
+#footer {
+  background-image: url('../src/assets/sand.jpg');
+  background-size: cover;
 }

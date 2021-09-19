@@ -17,7 +17,7 @@ const TeamMember: React.FC<TeamMemberProps> = props => {
 
             <div className="row justify-content-center">
                 {/*Name*/}
-                <div className="paragraphTitle mb-3">
+                <div className="bioTitle mb-3">
                     {props.name}
                     <span className="w-20 h-20 ml-3">
                         <TwitterLink url={props.twitterLink}/>
@@ -26,7 +26,7 @@ const TeamMember: React.FC<TeamMemberProps> = props => {
 
                 <div className="col-2"/>
                 {/*Bio*/}
-                <div className="paragraphContent col-8">
+                <div className="bioContent col-8 mb-5">
                     {props.bio}
                 </div>
                 <div className="col-2"/>

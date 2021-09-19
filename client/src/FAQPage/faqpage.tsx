@@ -25,33 +25,41 @@ const FAQPage: React.FC<FAQPageProps> = props => {
         answer: '3 good friends that have a huge passion for the NFT space, and are very excited to create and grow their own community. ',
     }
 
-    const faqList = [question1, question2, question3, question4, question5]
+    const faqList = [question1, question2, question3, question4, question5];
 
-    const renderFAQ = (faq: { question: any; answer: any; }) => {
+    const frequentlyAskedQuestion = (question: string, answer: string, idx: number) => {
+        const newId = `#collapse${idx}`;
         return (
-            <FrequentlyAskedQuestion question={faq.question} answer={faq.answer} />
-        )
-    }
-    const renderFAQList = () => {
-        // @ts-ignore
-        return (
-            <div>
-                // @ts-ignore
-                {faqList.forEach((faq) => {
-                    renderFAQ(faq);
-                })}
+            <div className="mt-5">
+                <p>
+                    <button className="faqButton btn btn-primary beachFont" type="button" data-bs-toggle="collapse" data-bs-target={newId} aria-expanded="false" aria-controls={newId}>
+                        {question}
+                    </button>
+                </p>
+                <div className="collapse" id={`collapse${idx}`}>
+                    <div className="collapseBody card card-body mx-5">
+                        {answer}
+                    </div>
+                </div>
             </div>
         )
     }
 
     return (
-        <div id="faq-page">
-            <div>
-                Frequently Asked Questions:
-            </div>
-            <div>
-                {renderFAQList()}
-            </div>
+            <div id="faq-page" className="d-flex justify-content-center align-items-center">
+                <div>
+                    <div>
+                        <p className="title mb-5">Frequently Asked Questions:</p>
+                    </div>
+                    <hr/>
+                    <div className="accordion container" id="accordionFAQ">
+                        {faqList.map((faq, idx) => {
+                            return (
+                                frequentlyAskedQuestion(faq.question, faq.answer, idx)
+                            )
+                        })}
+                    </div>
+                </div>
         </div>
     )
 }

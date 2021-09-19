@@ -8,7 +8,7 @@ interface TabLinkProps {
 const TabLink: React.FC<TabLinkProps> = props => {
     return (
         <div className="col">
-            <a className="tabLink" href={props.path}>{props.label}</a>
+            <a className="tabLink text-white" href={props.path}>{props.label}</a>
         </div>
     )
 }

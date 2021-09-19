@@ -46,10 +46,15 @@ const renderTeamMember = (teamMember: { dolphinImagePath: any; name: any; bio: a
 // }
 
 return (
-    <div id="team-page" className="d-flex justify-content-around">
-        {renderTeamMember(ryan)}
-        {renderTeamMember(henry)}
-        {renderTeamMember(shaan)}
+    <div id="team-page">
+        <div>
+            <p className="paragraphTitle">The Team</p>
+        </div>
+        <div className="d-flex justify-content-around">
+            {renderTeamMember(ryan)}
+            {renderTeamMember(henry)}
+            {renderTeamMember(shaan)}
+        </div>
     </div>
 )
 }
