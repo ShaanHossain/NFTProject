@@ -43,7 +43,6 @@ function App() {
   return (
     <div className="App">
       <HomePage />
-        <hr />
       <BackstoryPage />
       {/*  <hr />*/}
       {/*  <div>*/}
@@ -52,16 +51,12 @@ function App() {
       {/*  </div>*/}
         <hr />
       <RoadmapPage />
-        <hr />
-        {/*<hr />*/}
         <BoxPage />
       {/*<FAQPage />*/}
-        {/*<hr />*/}
       <TeamPage />
-        <hr />
       {/*  <JoinDiscordBanner/>*/}
       {/*  <DolphinFrameGif />*/}
-        <Footer/>
+      {/*  <Footer/>*/}
 
     </div>
   );

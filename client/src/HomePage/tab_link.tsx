@@ -8,7 +8,6 @@ interface TabLinkProps {
 
 const TabLink: React.FC<TabLinkProps> = props => {
     return (
-        <div className="col">
             <Link
                 className="tabLink"
                 activeClass="active"
@@ -18,8 +17,7 @@ const TabLink: React.FC<TabLinkProps> = props => {
                 offset={0}
                 duration={500}
             >{props.label}</Link>
-            {/*<a className="tabLink" href={props.path}>{props.label}</a>*/}
-        </div>
+
     )
 }
 export default TabLink;

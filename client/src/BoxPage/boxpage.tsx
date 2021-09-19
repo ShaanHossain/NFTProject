@@ -12,11 +12,11 @@ interface BoxPageProps {
 const BoxPage: React.FC<BoxPageProps> = props => {
     const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
 
+    const buttonLabel = 'Discord →'
+    const openDiscord = () => {
+        window.open("https://discord.gg/VHmPfwWHb7", "_blank");
+    }
     const renderDiscordBanner = () => {
-        const buttonLabel = 'Discord →'
-        const openDiscord = () => {
-            window.open("https://discord.gg/VHmPfwWHb7", "_blank");
-        }
         return (
             <div id="join-discord-banner" className="d-flex justify-content-around align-items-center">
                 <div className="added-items mr-5">
@@ -40,7 +40,7 @@ const BoxPage: React.FC<BoxPageProps> = props => {
                     <div className="col-4">
                         <div className="d-flex flex-column align-items-around">
                             {/*<div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>*/}
-                            <img id="discord-invite" className="my-5" src={DiscordInvite} />
+                            <img id="discord-invite" className="my-5" src={DiscordInvite} onClick={openDiscord}/>
                             <img id="dolphin-gif" className="mt-5" src={DolphinGif}/>
                         </div>
                     </div>

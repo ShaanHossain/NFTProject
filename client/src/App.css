@@ -128,8 +128,12 @@ button {
 }
 
 #logo-button {
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 6%;
+  max-height: 6%;
+}
+#logo-button-image {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .paragraphTitle2 {
@@ -145,6 +149,11 @@ button {
 .paragraphTitle {
   font-family: "Beachday";
   font-size: 6rem;
+}
+
+.paragraphTitle3 {
+  font-family: "Beachday";
+  font-size: 4rem;
 }
 
 .paragraphContent {
