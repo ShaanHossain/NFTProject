@@ -1,6 +1,6 @@
 import React from 'react';
 import TabLink from "./tab_link";
-import SignLogo from '../assets/ButtonImages/sign.png'
+import SignLogo from '../assets/sign.png'
 
 interface HomePageProps {
 
@@ -24,6 +24,7 @@ const HomePage: React.FC<HomePageProps> = props => {
                 <TabLink label="Roadmap" path="#"/>
                 <div className="col">
                     <button id="logo-tabLink" type="button" onClick={clickLogoButton}/>
+
                 </div>
                 <TabLink label="Logo" path="#"/>
                 <TabLink label="FAQs" path="#"/>

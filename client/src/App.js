@@ -34,7 +34,7 @@ function App() {
         body: JSON.stringify({ title: 'Fetch Mint Example' })
     };
   const mint = async () => {
-      const data = await fetch('App/nft', requestOptions);
+      const data = await fetch('api/nft', requestOptions);
       alert(data);
   }
 
@@ -42,7 +42,7 @@ function App() {
     <div className="App">
       {/*<HomePage />*/}
       {/*  <hr />*/}
-      {/*<BackstoryPage />*/}
+      <BackstoryPage />
       {/*  <hr />*/}
       {/*  <div>*/}
       {/*      Button to mint:*/}
