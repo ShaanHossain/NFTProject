@@ -13,7 +13,7 @@ const RoadmapPage: React.FC<RoadmapPageProps> = props => {
     }
     const roadMap20 = {
         percentage: 20,
-        reward: "We donate 10% of our net mint to the following charities: Henry's charity, Shaan's charity"
+        reward: "We donate 10% of our net mint to a charity of our choosing that supports sustainable Marine Life."
     }
     const roadMap30 = {
         percentage: 30,
@@ -25,7 +25,8 @@ const RoadmapPage: React.FC<RoadmapPageProps> = props => {
     }
     const roadMap50 = {
         percentage: 50,
-        reward: '50% of royalties from secondary sales on OpenSea will return to dolphin holders. More information to come in the future!\n'
+        reward: 'We give revenue back to you, the community that will have built us. More information to come in the future!'
+        // reward: '50% of royalties from secondary sales on OpenSea will return to dolphin holders. More information to come in the future!\n'
     }
     const roadMap75 = {
         percentage: 75,

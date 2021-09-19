@@ -3,26 +3,30 @@ import TeamMember from "./team_member";
 import RyanDolphin from '../assets/dolphins/ryan-dolphin.png'
 import ShaanDolphin from '../assets/dolphins/shaan-dolphin.png'
 import HenryDolphin from '../assets/dolphins/henry-dolphin.png'
+import DiscordLogo from '../assets/ButtonImages/discord.png'
+import TwitterLink from "./twitter_link";
 
 interface TeampageProps {
 
 }
 
 const TeamPage: React.FC<TeampageProps> = props => {
+    const twitterURL = 'https://twitter.com/LaxDlphinLagoon'
+    const discordURL = 'https://discord.gg/VHmPfwWHb7'
  const ryan = {
      dolphinImagePath: RyanDolphin,
      name: 'Ryan Clapp',
-     bio: 'Ryan is a goon who loves NFTs. He is also an avid fan of the Massive Multiplayer Online Game and Community, Roblox. He grew up playing as Duckster55 and dreamed of creating a project just like those of the great game builders like Telemon. This project is the result of that dream.',
+     bio: 'Ryan is a marketer and Finance student from Chicago IL. He is a Junior at Purdue University and has a passion for trading and NFTs.',
  }
 const henry = {
     dolphinImagePath: HenryDolphin,
     name: 'Henry Stachowiak',
-    bio: 'Henry is a goon who loves front end development. He is an avid fan of the Chicago Bears as well as his favorite news source DaChiBearsNews, who cover the team better than anyone around. He hopes to one day work for the news source as a web developer!',
+    bio: 'Henry is a fullstack (but primarily frontend) developer from Chicago IL. He is a Junior at Northeastern University and loves to watch reality T.V.',
 }
 const shaan = {
     dolphinImagePath: ShaanDolphin,
     name: 'Shaan Hossain',
-    bio: 'Shaan is a goon who loves back end development. His favorite thing to say is: "I hate money". Rumor has it that he thinks Ferraris are hurting the enviornment and his goal is to make sure that the company goes bankrupt!',
+    bio: 'Shaan is a backend dev from Mansfield MA. He is a Junior at Northeastern University and loves to build things for community use.',
 }
 const teamMemberList = [ryan, henry, shaan]
 
@@ -45,6 +49,8 @@ const renderTeamMember = (teamMember: { dolphinImagePath: any; name: any; bio: a
 //      )
 // }
 
+    const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
+
 return (
     <div id="team-page">
         <div>
@@ -55,6 +61,16 @@ return (
             {renderTeamMember(henry)}
             {renderTeamMember(shaan)}
         </div>
+        <div>
+            <p className="paragraphTitle3">Our Socials</p>
+        </div>
+        <div className="social-links my-5 mb-5">
+            <a className="discord-link mr-5" href={discordURL}>
+                <img className="discord-icon" src={DiscordLogo} alt="Discord Logo" width="40" height="30" />
+            </a>
+            <TwitterLink url={twitterURL}/>
+        </div>
+        <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
     </div>
 )
 }

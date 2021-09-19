@@ -12,16 +12,29 @@ const HomePage: React.FC<HomePageProps> = props => {
 
     const clickLogoButton = () => {}
 
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: 'Fetch Mint Example' })
+    };
+    const mint = async () => {
+        const data = await fetch('api/nft', requestOptions);
+        alert(data);
+    }
+
     return (
-        <div id="home-page" className="d-flex flex-column">
+        <div id="home-page" className="d-flex justify-content-around flex-column">
             {/*Tabs*/}
-            <div id="tabs" className="d-flex justify-content-between mt-5">
-                <TabLink label="Backstory" path="#"/>
-                <TabLink label="Roadmap" path="#"/>
-                {/*<img id="logo-button" src={SignLogo} />*/}
-                <button id="logo-tabLink" type="button" onClick={clickLogoButton}/>
-                <TabLink label="FAQs" path="#"/>
-                <TabLink label="Team" path="#"/>
+            <div id="tabs" className="d-flex justify-content-around mt-5">
+                <TabLink label="Backstory" path="backstory-page"/>
+                <TabLink label="Roadmap" path="roadmap-page"/>
+                <a id="logo-button" onClick={mint}>
+                    <img id="logo-button-image" src={SignLogo} />
+                </a>
+                {/*<button id="logo-tabLink" type="button" onClick={clickLogoButton}/>*/}
+                <TabLink label="FAQs" path="box-page"/>
+                <TabLink label="Team" path="team-page"/>
+                <a className="tabLink">Smart Contract</a>
             </div>
 
             {/*Intro Paragraph*/}

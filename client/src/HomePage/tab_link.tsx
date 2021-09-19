@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 interface TabLinkProps {
     label: string;
@@ -7,9 +8,16 @@ interface TabLinkProps {
 
 const TabLink: React.FC<TabLinkProps> = props => {
     return (
-        <div className="col">
-            <a className="tabLink" href={props.path}>{props.label}</a>
-        </div>
+            <Link
+                className="tabLink"
+                activeClass="active"
+                to={props.path}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+            >{props.label}</Link>
+
     )
 }
 export default TabLink;

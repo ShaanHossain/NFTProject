@@ -22,9 +22,6 @@ const Footer: React.FC<FooterProps> = props => {
                 </a>
                 <TwitterLink url={twitterURL}/>
             </div>
-            <div className="contract-link mb-5">
-                <button className="btn btn-primary">Smart Contract</button>
-            </div>
         </div>
     )
 }
