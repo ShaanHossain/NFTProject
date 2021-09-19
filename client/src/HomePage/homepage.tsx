@@ -14,7 +14,6 @@ const HomePage: React.FC<HomePageProps> = props => {
 
     return (
         <div id="home-page" className="container">
-
             {/*Tabs*/}
             <div className="row justify-content-between mb-10">
                 {/*<div className="col"></div>*/}
@@ -24,9 +23,8 @@ const HomePage: React.FC<HomePageProps> = props => {
                 <TabLink label="Backstory" path="#"/>
                 <TabLink label="Roadmap" path="#"/>
                 <div className="col">
-                    <button id="logo-tabLink" type="button" onClick={clickLogoButton}>
-                        {/*<img src={SignLogo} alt="Lax Dolphin Lagoon Sign Logo"/>*/}
-                    </button>
+                    <button id="logo-tabLink" type="button" onClick={clickLogoButton}/>
+
                 </div>
                 <TabLink label="Logo" path="#"/>
                 <TabLink label="FAQs" path="#"/>

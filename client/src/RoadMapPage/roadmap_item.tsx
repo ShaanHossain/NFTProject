@@ -8,11 +8,12 @@ interface RoadMapItemProps {
 const RoadMapItem: React.FC<RoadMapItemProps> = props => {
 
     return (
-        <div>
-            {/*Percent*/}
-            <span>{props.percentage} %</span>
-            {/*Text*/}
-            <span>{props.reward}</span>
+        <div className="roadmap-item row my-4">
+            <div className="col-2 percentage">{props.percentage}%</div>
+            <div className="col-10">{props.reward}</div>
+            {/*<span className="mr-2 percentage">{props.percentage}%</span>*/}
+            {/*/!*Text*!/*/}
+            {/*<span>{props.reward}</span>*/}
         </div>
     )
 }

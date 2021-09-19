@@ -42,10 +42,17 @@
   font-family: "Pirate";
   src: local('Pirate'), url('../src/assets/fonts/pirate.ttf') format('truetype');
 }
+.pirateFont {
+  font-family: "Pirate";
+}
 
 @font-face {
   font-family: "Beachday";
   src: local('Beachday'), url('../src/assets/fonts/beachday.ttf') format('truetype');
+}
+
+.beachFont {
+  font-family: "Beachday";
 }
 
 html {
@@ -73,7 +80,7 @@ button {
   color: #B76E79;
 }
 #logo-tabLink {
-  background-image: url('../src/assets/sign.png');
+  background-image: url('../src/assets/ButtonImages/sign.png');
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -86,7 +93,6 @@ button {
 .paragraphContent {
   font-family: "Beachday";
   font-size: 1rem;
-
 }
 
 /*Backstory*/
@@ -101,6 +107,69 @@ button {
 }
 
 /*Roadmap*/
+#roadmap-page {
+  background-image: url('../src/assets/sand-gradient-background.png');
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
 #roadmap-map {
   background-image: url('../src/assets/map.png');
+  position:absolute;
+  top:150px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
+.roadmapTitle {
+  font-family: "Pirate";
+  font-size: 3rem;
+}
+.roadmapParagraph {
+  font-family: "Beachday";
+  font-size: 1rem;
+}
+.roadmap-item {
+  font-family: "Pirate";
+}
+.percentage {
+  font-size: 2rem;
+}
+
+/*Team*/
+#team-page {
+  background-image: url('../src/assets/sand-gradient-background.png');
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+.team-member {
+  flex-shrink: 1;
+}
+
+/*Discord Banner*/
+#join-discord-banner {
+  background-image: url('../src/assets/dolphin-blurb.png');
+  background-size: cover;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
