@@ -13,15 +13,15 @@ const HomePage: React.FC<HomePageProps> = props => {
     const clickLogoButton = () => {}
 
     return (
-        <div id="home-page" className="d-flex flex-column">
+        <div id="home-page" className="d-flex justify-content-around flex-column">
             {/*Tabs*/}
             <div id="tabs" className="d-flex justify-content-between mt-5">
-                <TabLink label="Backstory" path="#"/>
-                <TabLink label="Roadmap" path="#"/>
+                <TabLink label="Backstory" path="backstory-page"/>
+                <TabLink label="Roadmap" path="roadmap-page"/>
                 {/*<img id="logo-button" src={SignLogo} />*/}
                 <button id="logo-tabLink" type="button" onClick={clickLogoButton}/>
-                <TabLink label="FAQs" path="#"/>
-                <TabLink label="Team" path="#"/>
+                <TabLink label="FAQs" path="box-page"/>
+                <TabLink label="Team" path="team-page"/>
             </div>
 
             {/*Intro Paragraph*/}
