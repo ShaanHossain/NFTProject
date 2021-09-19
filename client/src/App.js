@@ -49,7 +49,6 @@ function App() {
       {/*      Button to mint:*/}
       {/*      <button type="button" onClick={mint}>Mint</button>*/}
       {/*  </div>*/}
-        <hr />
       <RoadmapPage />
         <BoxPage />
       {/*<FAQPage />*/}

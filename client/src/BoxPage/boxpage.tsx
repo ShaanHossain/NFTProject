@@ -18,7 +18,7 @@ const BoxPage: React.FC<BoxPageProps> = props => {
     }
     const renderDiscordBanner = () => {
         return (
-            <div id="join-discord-banner" className="d-flex justify-content-around align-items-center">
+            <div id="join-discord-banner" className="Z">
                 <div className="added-items mr-5">
                     <div><p className="h1 beachFont mb-1">Join Our Discord</p></div>
                     <div><button className="btn btn-primary" onClick={openDiscord} >{buttonLabel}</button></div>
@@ -35,22 +35,20 @@ const BoxPage: React.FC<BoxPageProps> = props => {
 
     return (
         <div id="box-page">
-            <div className="container">
-                <div className="row">
-                    <div className="col-4">
+                <div className="d-flex justify-content-around">
                         <div className="d-flex flex-column align-items-around">
-                            {/*<div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>*/}
+                            <div className="mt-5">
+                                <img id="dolphin-gif" src={DolphinGif}/>
+
+                                <span className="paragraphContent">
+                                    <p>Pick your favorite, then go ahead and ↓</p>
+                                </span>
+                            </div>
+                            {/*<img id="dolphin-gif" className="mt-5" src={DolphinGif}/>*/}
                             <img id="discord-invite" className="my-5" src={DiscordInvite} onClick={openDiscord}/>
-                            <img id="dolphin-gif" className="mt-5" src={DolphinGif}/>
                         </div>
-                    </div>
-                    <div className="col-1"></div>
-                    <div className="col-7 mt-5">
-                        <FAQPage />
-                    </div>
+                    <FAQPage />
                 </div>
-                <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
-            </div>
         </div>
     )
 }

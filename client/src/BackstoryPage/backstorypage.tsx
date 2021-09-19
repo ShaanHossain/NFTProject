@@ -10,7 +10,7 @@ const BackstoryPage: React.FC<BackstoryPageProps> = props => {
     const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
 
     return (
-        <div id="backstory-page" className="d-flex justify-content-between align-items-center flex-wrap">
+        <div id="backstory-page" className="d-flex justify-content-between align-items-center flex-wrap remove-all-margin-padding">
             {/*Spacer Div*/}
             <div className="col-6">
 
@@ -22,8 +22,14 @@ const BackstoryPage: React.FC<BackstoryPageProps> = props => {
             </div>
             <div id="backstory-text" className="col-6">
                 <div className="my-5 mr-5">
+                    <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
+                    <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
                     <div><p className="paragraphTitle text-white mb-5"><strong>{backStoryTitle}</strong></p></div>
                     <div><p className="paragraphContent text-white d-flex flex-wrap mt-5">{backStoryText}</p></div>
+                    <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
+                    <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
+                    <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
+                    <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
                     <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
                     <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
                 </div>
