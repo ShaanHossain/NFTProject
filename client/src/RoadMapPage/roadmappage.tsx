@@ -5,6 +5,8 @@ interface RoadmapPageProps {}
 
 const RoadmapPage: React.FC<RoadmapPageProps> = props => {
 
+    const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
+
     const roadMap10 = {
         percentage: 10,
         reward: 'The kingdom’s cash reserve (community wallet) gets filled with ETH. The cash reserve will be used for different things voted by Dolphin holders. We will use these funds to buy floor dolphins, acquire giveaway prizes, and support our community. A percentage of sales will be decided to make sure the project is sustained. We will be hosting competitions for the first 5 days after launch. More details to come!\n'
@@ -40,24 +42,25 @@ const RoadmapPage: React.FC<RoadmapPageProps> = props => {
             <RoadMapItem percentage={item.percentage} reward={item.reward}/>
         )
     }
-    // @ts-ignore
-    const renderAllRoadMapItems = () => (
-        <div>
-            {/*@ts-ignore*/}
-            {roadMapItems.map((roadmap: { percentage: any; reward: any }) => <li>{renderRoadMapItem(roadmap)}</li>)}
-        </div>
-    )
+    // const renderAllRoadMapItems = () => (
+    //     return (
+    //         {roadMapItems.map((roadmap: { percentage: any; reward: any }) => <li>{renderRoadMapItem(roadmap)}</li>)}
+    //     )
+    //
+    // )
 
     return (
         <div id="roadmap-page">
-            <p className="h1 beachFont mt-2 mb-3 roadmapTitle">Treasure Map</p>
-            <p className="beachFont mb-5 roadmapParagraph">Our dolphins don't really care about money... so they will be giving back some of the wealth they found back to their community of fans!</p>
-            <div id="roadmap-map" className="container mt-1">
+            <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
+            <div id="roadmap-map" className="container">
+                <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
+                <p className="h1 mb-2 paragraphTitlePirate">Treasure Map</p>
                 <ul>
-                    {renderAllRoadMapItems()}
+                    {roadMapItems.map((roadmap: { percentage: any; reward: any }) => <li>{renderRoadMapItem(roadmap)}</li>)}
                 </ul>
                 {/*{roadMapItems.map((roadmap: { percentage: any; reward: any }) => {renderRoadMapItem(roadmap)})}*/}
             </div>
+            <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
         </div>
     )
 }

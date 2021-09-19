@@ -9,17 +9,21 @@ const Footer: React.FC<FooterProps> = props => {
     const twitterURL = 'https://twitter.com/LaxDlphinLagoon'
     const discordURL = 'https://discord.gg/VHmPfwWHb7'
     const smartContractURL = '#'
+    const openSmartContract = () => {
+        window.open(smartContractURL, "_blank");
+    }
+
 
     return (
-        <div className="mt-5">
-            <div className="social-links mb-5">
+        <div id="footer">
+            <div className="social-links my-5">
                 <a className="discord-link mr-3" href={discordURL}>
                     <img className="discord-icon" src={DiscordLogo} alt="Discord Logo" width="40" height="30" />
                 </a>
                 <TwitterLink url={twitterURL}/>
             </div>
-            <div className="contract-link">
-                <a href={smartContractURL}>Smart Contract</a>
+            <div className="contract-link mb-5">
+                <button className="btn btn-primary">Smart Contract</button>
             </div>
         </div>
     )

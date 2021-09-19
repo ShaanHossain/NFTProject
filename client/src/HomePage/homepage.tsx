@@ -7,37 +7,30 @@ interface HomePageProps {
 }
 
 const HomePage: React.FC<HomePageProps> = props => {
-    const introParagraphTitle = 'Dive in the Lagoon'
+    const introParagraphTitle = 'Dive into the Lagoon'
     const introParagraphText = '9010 Dolphins chilling in an enormous sunken castle. A limited NFT collection where the token doubles as a membership to the lax dolphin lagoon. Dolphins are minted as ERC-721 tokens. Each of these cost .04 ETH to mint.'
 
     const clickLogoButton = () => {}
 
     return (
-        <div id="home-page" className="container">
+        <div id="home-page" className="d-flex flex-column">
             {/*Tabs*/}
-            <div className="row justify-content-between mb-10">
-                {/*<div className="col"></div>*/}
-                {/*<div className="col"></div>*/}
-                {/*<div className="col"></div>*/}
-                {/*<div className="col"></div>*/}
+            <div id="tabs" className="d-flex justify-content-between mt-5">
                 <TabLink label="Backstory" path="#"/>
                 <TabLink label="Roadmap" path="#"/>
-                <div className="col">
-                    <button id="logo-tabLink" type="button" onClick={clickLogoButton}/>
-
-                </div>
-                <TabLink label="Logo" path="#"/>
+                {/*<img id="logo-button" src={SignLogo} />*/}
+                <button id="logo-tabLink" type="button" onClick={clickLogoButton}/>
                 <TabLink label="FAQs" path="#"/>
                 <TabLink label="Team" path="#"/>
             </div>
 
             {/*Intro Paragraph*/}
-            <div className="mt-5">
-                <div className="paragraphTitle">
-                    <p className="h1">{introParagraphTitle}</p>
+            <div id="intro" className="mb-5 container">
+                <div className="paragraphTitle2">
+                    <p className="text-white">{introParagraphTitle}</p>
                 </div>
-                <div className="paragraphContent">
-                    <p className="h1 text-white">{introParagraphText}</p>
+                <div className="paragraphContent2 my-5">
+                    <p className="text-white">{introParagraphText}</p>
                 </div>
             </div>
         </div>

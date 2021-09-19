@@ -9,6 +9,8 @@ import FAQPage from "./FAQPage/faqpage";
 import TeamPage from "./TeamPage/teampage";
 import Footer from "./footer";
 import JoinDiscordBanner from "./join_discord_banner";
+import DolphinFrameGif from "../src/dolphin-frame-gif"
+import BoxPage from "../src/BoxPage/boxpage"
 
 function App() {
 
@@ -40,22 +42,27 @@ function App() {
 
   return (
     <div className="App">
-      {/*<HomePage />*/}
-      {/*  <hr />*/}
+      <HomePage />
+        <hr />
       <BackstoryPage />
       {/*  <hr />*/}
       {/*  <div>*/}
       {/*      Button to mint:*/}
       {/*      <button type="button" onClick={mint}>Mint</button>*/}
       {/*  </div>*/}
-      {/*  <hr />*/}
-      {/*<RoadmapPage />*/}
-      {/*  <hr />*/}
+        <hr />
+      <RoadmapPage />
+        <hr />
+        {/*<hr />*/}
+        <BoxPage />
       {/*<FAQPage />*/}
-      {/*  <hr />*/}
-      {/*<TeamPage />*/}
-        <JoinDiscordBanner/>
-      {/*  <Footer/>*/}
+        {/*<hr />*/}
+      <TeamPage />
+        <hr />
+      {/*  <JoinDiscordBanner/>*/}
+      {/*  <DolphinFrameGif />*/}
+        <Footer/>
+
     </div>
   );
 }
