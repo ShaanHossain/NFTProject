@@ -55,6 +55,15 @@
   font-family: "Beachday";
 }
 
+@font-face {
+  font-family: "Wood";
+  src: local('Wood'), url('../src/assets/fonts/wood.otf') format('opentype');
+}
+
+.woodFont {
+  font-family: "Wood";
+}
+
 html {
   margin: 0px;
   height: 100%;
@@ -107,9 +116,9 @@ button {
 }
 
 .tabLink {
-  font-family: "Pirate", serif;
+  font-family: "Wood", serif;
   font-size: 2.75rem;
-  /*color: #B76E79;*/
+  color: #B07C4F;
 }
 #logo-tabLink {
   background-image: url('../src/assets/ButtonImages/sign.png');
@@ -117,6 +126,12 @@ button {
   width: 5%;
   z-index: 1;
 }
+
+#logo-button {
+  max-width: 20%;
+  max-height: 20%;
+}
+
 .paragraphTitle2 {
   font-family: "Beachday";
   font-size: 10rem;

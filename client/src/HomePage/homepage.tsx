@@ -15,14 +15,14 @@ const HomePage: React.FC<HomePageProps> = props => {
     return (
         <div id="home-page" className="d-flex flex-column">
             {/*Tabs*/}
-            <div id="tabs" className="d-flex justify-content-between mb-10">
+            <div id="tabs" className="d-flex justify-content-between mt-5">
                 <TabLink label="Backstory" path="#"/>
                 <TabLink label="Roadmap" path="#"/>
+                {/*<img id="logo-button" src={SignLogo} />*/}
                 <button id="logo-tabLink" type="button" onClick={clickLogoButton}/>
                 <TabLink label="FAQs" path="#"/>
                 <TabLink label="Team" path="#"/>
             </div>
-            <hr />
 
             {/*Intro Paragraph*/}
             <div id="intro" className="mb-5 container">
