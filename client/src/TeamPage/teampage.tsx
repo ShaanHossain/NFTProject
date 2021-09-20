@@ -15,39 +15,40 @@ const TeamPage: React.FC<TeampageProps> = props => {
     const discordURL = 'https://discord.gg/VHmPfwWHb7'
  const ryan = {
      dolphinImagePath: RyanDolphin,
-     name: 'Ryan Clapp',
-     bio: 'Ryan is a marketer and Finance student from Chicago IL. He is a Junior at Purdue University and has a passion for trading and NFTs.',
+     name: 'RC',
+     bio: 'RC is a marketer and Finance student from the midwest. He is a Junior in university and has a passion for trading and NFTs.',
+     twitterURL: 'https://mobile.twitter.com/Blockchainchilr'
  }
 const henry = {
     dolphinImagePath: HenryDolphin,
-    name: 'Henry Stachowiak',
-    bio: 'Henry is a fullstack (but primarily frontend) developer from Chicago IL. He is a Junior at Northeastern University and loves to watch reality T.V.',
+    name: 'Coder Cam',
+    bio: 'Cam is a fullstack (but primarily frontend) developer from the midwest. He is a Junior in university and loves to watch reality T.V.',
+    twitterURL: 'https://twitter.com/coder_cam'
 }
 const shaan = {
     dolphinImagePath: ShaanDolphin,
-    name: 'Shaan Hossain',
-    bio: 'Shaan is a backend dev from Mansfield MA. He is a Junior at Northeastern University and loves to build things for community use.',
+    name: 'SirJPHackworth',
+    bio: 'SirJPHackworth is a backend dev from Mansfield MA. He is a Junior in university and loves to build things for community use.',
+    twitterURL: 'https://twitter.com/SirJPHackworth'
 }
 const teamMemberList = [ryan, henry, shaan]
 
-const renderTeamMember = (teamMember: { dolphinImagePath: any; name: any; bio: any; }) => {
+    const openDiscord = () => {
+        window.open("https://discord.gg/VHmPfwWHb7", "_blank");
+    }
+
+const renderTeamMember = (teamMember: { dolphinImagePath: any; name: any; bio: any; twitterURL: string}) => {
  return (
          <TeamMember
              name={teamMember.name}
              bio={teamMember.bio}
              dolphinImagePath={teamMember.dolphinImagePath}
-             twitterLink={'#'}
+             twitterLink={teamMember.twitterURL}
          />
  )
 };
 
-// const renderAllTeamMembers = () => {
-//      return (
-//          <div>
-//              {teamMemberList.map((member: { dolphinImagePath: any; name: any; bio: any }) => {renderTeamMember(member)})}
-//          </div>
-//      )
-// }
+    const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
 
     const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
 
@@ -61,13 +62,15 @@ return (
             {renderTeamMember(henry)}
             {renderTeamMember(shaan)}
         </div>
-        <div>
+        <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
+        <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
+        <div className="mb-5">
             <p className="paragraphTitle3">Our Socials</p>
         </div>
         <div className="social-links my-5 mb-5">
-            <a className="discord-link mr-5" href={discordURL}>
-                <img className="discord-icon" src={DiscordLogo} alt="Discord Logo" width="40" height="30" />
-            </a>
+            <button className="btn discord-link mr-5" onClick={openDiscord} data-toggle="tooltip" data-placement="top" title={discordURL}>
+                <img className="discord-icon" src={DiscordLogo} alt="Discord Logo" width="80" height="70"  />
+            </button>
             <TwitterLink url={twitterURL}/>
         </div>
         <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>

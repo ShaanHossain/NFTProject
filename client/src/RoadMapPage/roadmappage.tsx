@@ -51,9 +51,9 @@ const RoadmapPage: React.FC<RoadmapPageProps> = props => {
     // )
 
     return (
-        <div id="roadmap-page">
+        <div id="roadmap-page" className="d-flex justify-content-center align-items-center remove-all-margin-padding">
             <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
-            <div id="roadmap-map" className="container">
+            <div id="roadmap-map" className="container my-5">
                 <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
                 <p className="h1 mb-2 paragraphTitlePirate">Treasure Map</p>
                 <ul>
