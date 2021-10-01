@@ -1,5 +1,4 @@
 import React from 'react';
-import FrequentlyAskedQuestion from './frequentlyAskedQuestion'
 
 interface FAQPageProps {}
 
@@ -27,20 +26,17 @@ const FAQPage: React.FC<FAQPageProps> = props => {
 
     const faqList = [question1, question2, question3, question4, question5];
 
-    const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
-
-
     const frequentlyAskedQuestion = (question: string, answer: string, idx: number) => {
         const newId = `#collapse${idx}`;
         return (
             <div className="mt-5">
                 <p>
-                    <button className="faqButton btn btn-primary beachFont paragraphContent2" type="button" data-bs-toggle="collapse" data-bs-target={newId} aria-expanded="false" aria-controls={newId}>
+                    <button className="faqBackground sandFont sandDarkColor btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target={newId} aria-expanded="false" aria-controls={newId}>
                         {question}
                     </button>
                 </p>
                 <div className="collapse" id={`collapse${idx}`}>
-                    <div className="collapseBody card card-body mx-5">
+                    <div className="card card-body mx-5 faqBackground title2">
                         {answer}
                     </div>
                 </div>
@@ -50,7 +46,7 @@ const FAQPage: React.FC<FAQPageProps> = props => {
 
     return (
             <div id="faq-page" className="d-flex justify-content-center align-items-center">
-                <div>
+                <div className="my-5">
                     <div>
                         <p className="paragraphTitle3 mb-5">Frequently Asked Questions:</p>
                     </div>

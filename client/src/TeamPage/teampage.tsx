@@ -3,16 +3,12 @@ import TeamMember from "./team_member";
 import RyanDolphin from '../assets/dolphins/ryan-dolphin.png'
 import ShaanDolphin from '../assets/dolphins/shaan-dolphin.png'
 import HenryDolphin from '../assets/dolphins/henry-dolphin.png'
-import DiscordLogo from '../assets/ButtonImages/discord.png'
-import TwitterLink from "./twitter_link";
 
 interface TeampageProps {
 
 }
 
 const TeamPage: React.FC<TeampageProps> = props => {
-    const twitterURL = 'https://twitter.com/LaxDlphinLagoon'
-    const discordURL = 'https://discord.gg/VHmPfwWHb7'
  const ryan = {
      dolphinImagePath: RyanDolphin,
      name: 'RC',
@@ -27,15 +23,10 @@ const henry = {
 }
 const shaan = {
     dolphinImagePath: ShaanDolphin,
-    name: 'SirJPHackworth',
-    bio: 'SirJPHackworth is a backend dev from Mansfield MA. He is a Junior in university and loves to build things for community use.',
+    name: 'Sir JP Hackworth',
+    bio: 'Sir JP Hackworth is a backend dev from New England. He is a Junior in university and loves to build things for community use.',
     twitterURL: 'https://twitter.com/SirJPHackworth'
 }
-const teamMemberList = [ryan, henry, shaan]
-
-    const openDiscord = () => {
-        window.open("https://discord.gg/VHmPfwWHb7", "_blank");
-    }
 
 const renderTeamMember = (teamMember: { dolphinImagePath: any; name: any; bio: any; twitterURL: string}) => {
  return (
@@ -48,8 +39,6 @@ const renderTeamMember = (teamMember: { dolphinImagePath: any; name: any; bio: a
  )
 };
 
-    const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
-
 return (
     <div id="team-page">
         <div>
@@ -60,18 +49,6 @@ return (
             {renderTeamMember(henry)}
             {renderTeamMember(shaan)}
         </div>
-        <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
-        <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
-        <div className="mb-5">
-            <p className="paragraphTitle3">Our Socials</p>
-        </div>
-        <div className="social-links my-5 mb-5">
-            <button className="btn discord-link mr-5" onClick={openDiscord} data-toggle="tooltip" data-placement="top" title={discordURL}>
-                <img className="discord-icon" src={DiscordLogo} alt="Discord Logo" width="80" height="70"  />
-            </button>
-            <TwitterLink url={twitterURL}/>
-        </div>
-        <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
     </div>
 )
 }

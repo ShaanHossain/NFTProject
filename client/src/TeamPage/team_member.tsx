@@ -20,7 +20,7 @@ const TeamMember: React.FC<TeamMemberProps> = props => {
                 <div className="bioTitle mb-3">
                     {props.name}
                     <span className="w-20 h-20 ml-3">
-                        <TwitterLink url={props.twitterLink}/>
+                        <TwitterLink url={props.twitterLink} width={70} height={50}/>
                     </span>
                 </div>
 

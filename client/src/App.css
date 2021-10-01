@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -64,9 +70,30 @@
   font-family: "Wood";
 }
 
+@font-face {
+  font-family: "Sand";
+  src: local('Sand'), url('../src/assets/fonts/sandscrape.ttf') format('truetype');
+}
+
+.sandFont {
+  font-family: "Sand";
+}
+
+.sandDarkColor {
+  color: #877347;
+  font-size: 1.5rem;
+}
+
+.sandDarkColorSmall {
+  color: #877347;
+  font-size: 1rem;
+}
+
+
 html {
   margin: 0px;
   height: 100%;
+  font-size:100%;
 }
 
 button {
@@ -111,56 +138,33 @@ button {
   padding:0 ! important;
 }
 
-/*HomePage*/
-/*#home-page {*/
-/*  background-image: url('../src/assets/castle-image.jpg');*/
-/*  background-size: cover;*/
-/*  height: 100%;*/
-/*}*/
-#videoBG {
-  position:fixed;
-  z-index: -1;
 
-  width:100%;
-  height: 100%;
-}
+#videoDiv2 {width:100%; height: auto; margin:auto; display:block; position: relative;} /* This has been changed */
+#video2{width:100%; height:auto } /* This has been changed */
+#video-content { position: absolute; top: 0; left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;}
 
-@media (min-aspect-ratio: 16/9) {
-  #videoBG {
-    width:100%;
-    height: auto;
-  }
+#intro-paragraph {
+  width: 66%;
 }
 
-@media (max-aspect-ratio: 16/9) {
-  #videoBG {
-    width:auto;
-    height: 100%;
-  }
+#dolphin-gif {
+  max-width: 30%;
+  max-height: 30%;
+  margin-bottom: 20rem;
 }
 
-@media (max-width: 767px) {
-  #videoBG {
-    display: none;
-  }
-  #home-page {
-    background: url('../src/assets/castle-vid.mp4');
-    background-size: cover;
-  }
+.tabImage {
+  width: 75%;
+  height: auto;
 }
 
-#tabs {
-  flex: 1;
-}
-#intro {
-  flex:1
-}
 
-.tabLink {
-  font-family: "Wood", serif;
-  font-size: 2.75rem;
-  color: #B07C4F;
-}
 #logo-tabLink {
   background-image: url('../src/assets/ButtonImages/sign.png');
   background-size: cover;
@@ -175,6 +179,10 @@ button {
 #logo-button-image {
   max-width: 100%;
   max-height: 100%;
+}
+
+.faqAnswer {
+
 }
 
 .paragraphTitle2 {
@@ -228,19 +236,22 @@ button {
   height: 100%;
 }
 
-#backstory-text {
-}
-
-/*Roadmap*/
-#roadmap-page {
+#sand-gradient-pages {
   background-image: url('../src/assets/sand-gradient-background.png');
-  background-size: 100%;
+  background-size: cover;
+  height: 100%;
 }
 
-#roadmap-map {
-  background-image: url('../src/assets/map.png');
-  background-size: cover;
-  height: 80%;
+/*!*Roadmap*!*/
+/*#roadmap-page {*/
+/*  background-image: url('../src/assets/sand-gradient-background.png');*/
+/*  background-size: cover;*/
+/*  height: 100%;*/
+/*}*/
+
+.roadmap-resize {
+  width: 75rem;
+  height: auto;
 }
 
 .roadmapTitle {
@@ -259,7 +270,16 @@ button {
 }
 
 /*FAQ Page*/
-
+/*#faq-page {*/
+/*  background-image: url('../src/assets/sand-gradient-background.png');*/
+/*  background-position: center top;*/
+/*  background-size: 100% auto;*/
+/*}*/
+.faqBackground {
+  background-image: url('../src/assets/sandBackground.jpg');
+  background-position: center top;
+  background-size: 100% auto;
+}
 
 
 /*Box*/
@@ -270,14 +290,14 @@ button {
 }
 
 /*Team*/
-#team-page {
-  background-image: url('../src/assets/sand-gradient-background.png');
-  background-position: center top;
-  background-size: 100% auto;
-}
-/*.team-member {*/
-/*  flex-shrink: 1;*/
+/*#team-page {*/
+/*  background-image: url('../src/assets/sand-gradient-background.png');*/
+/*  background-position: center top;*/
+/*  background-size: 100% auto;*/
 /*}*/
+.team-member {
+  flex-shrink: 1;
+}
 
 /*Discord Banner*/
 #join-discord-banner {
@@ -286,8 +306,8 @@ button {
   width: 100%;
 }
 #discord-invite {
-  max-width: 130%;
-  max-height: 130%;
+  max-width: 40%;
+  max-height: 40%;
 }
 
 .added-items {
@@ -306,15 +326,8 @@ button {
   position: relative;
 }
 
-
-#dolphin-gif {
-  max-width: 80%;
-  max-height: 80%;
-}
-
-.collapseBody {
-  background-image: url('../src/assets/sand.jpg');
-  background-size: cover;
+.social-links {
+  margin-bottom: -10rem;
 }
 
 #footer {

@@ -1,5 +1,4 @@
 import React from 'react';
-import DolphinGif from '../assets/dolphin.gif'
 
 interface BackstoryPageProps {}
 
