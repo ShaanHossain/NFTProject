@@ -22,10 +22,6 @@ const BackgroundVideo: React.FC<BackgroundVideoProps> = props => {
             <div id="tabs" className="d-flex justify-content-around">
                 <TabLink label="Backstory" path="backstory-page" image={BackstoryImage}/>
                 <TabLink label="Roadmap" path="roadmap-page" image={RoadMapImage} />
-                <a id="logo-button" onClick={() => {}}>
-                    <img id="logo-button-image" src={SignLogo}  alt='logo-button'/>
-                </a>
-                {/*<button id="logo-tabLink" type="button" onClick={clickLogoButton}/>*/}
                 <TabLink label="FAQs" path="box-page" image={FAQImage}/>
                 <TabLink label="Team" path="team-page" image={TeamImage}/>
             </div>

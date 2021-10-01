@@ -1,3 +1,62 @@
+.paragraphTitle {
+  font-family: "Beachday";
+  font-size: 6rem;
+}
+
+.paragraphTitle2 {
+  font-family: "Beachday";
+  font-size: 10rem;
+}
+
+.paragraphTitle3 {
+  font-family: "Beachday";
+  font-size: 4rem;
+}
+
+.paragraphContent {
+  font-family: "Beachday";
+  font-size: 2rem;
+}
+
+.paragraphContent2 {
+  font-family: "Beachday";
+  font-size: 3rem;
+}
+
+.paragraphTitlePirate {
+  font-family: "Pirate";
+  font-size: 6rem;
+}
+
+.paragraphContentPirate {
+  font-family: "Pirate";
+  font-size: 1.2rem;
+}
+
+.bioTitle {
+  font-family: "Beachday";
+  font-size: 4rem;
+}
+.bioContent {
+  font-family: "Beachday";
+  font-size: 1.3rem;
+}
+
+.title {
+  font-family: "Beachday";
+  font-size: 3rem;
+}
+
+.title2 {
+  font-family: "Beachday";
+  font-size: 2rem;
+}
+
+.textContent {
+  font-family: "Beachday";
+  font-size: 1rem;
+}
+/*Text is overrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 *{
   margin: 0;
   padding: 0;
@@ -101,30 +160,6 @@ button {
   background-color: transparent;
 }
 
-.btn-xlarge {
-  padding: 18px 28px;
-  font-size: 4rem;
-  line-height: normal;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-}
-
-.title {
-  font-family: "Beachday";
-  font-size: 3rem;
-}
-
-.title2 {
-  font-family: "Beachday";
-  font-size: 2rem;
-}
-
-.textContent {
-  font-family: "Beachday";
-  font-size: 1rem;
-}
-
 .invisible {
   visibility: hidden;
 }
@@ -138,19 +173,42 @@ button {
   padding:0 ! important;
 }
 
-
+/*Page specific stuff starts happening!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 #videoDiv2 {width:100%; height: auto; margin:auto; display:block; position: relative;} /* This has been changed */
-#video2{width:100%; height:auto } /* This has been changed */
-#video-content { position: absolute; top: 0; left: 0;
+#video2{
+  width:100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#video-content {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   width: 100%;
-  height: 100%;}
+  height: 100%;
+}
+
 
 #intro-paragraph {
   width: 66%;
+}
+
+@media screen and (max-width: 1500px) {
+  .paragraphTitle2 {
+    font-family: "Beachday";
+    font-size: 6rem;
+  }
+
+  #intro-paragraph {
+    
+  }
 }
 
 #dolphin-gif {
@@ -165,90 +223,24 @@ button {
 }
 
 
-#logo-tabLink {
-  background-image: url('../src/assets/ButtonImages/sign.png');
-  background-size: cover;
-  width: 5%;
-  z-index: 1;
-}
-
-#logo-button {
-  max-width: 6%;
-  max-height: 6%;
-}
-#logo-button-image {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.faqAnswer {
-
-}
-
-.paragraphTitle2 {
-  font-family: "Beachday";
-  font-size: 10rem;
-}
-
-.paragraphContent2 {
-  font-family: "Beachday";
-  font-size: 3rem;
-}
-
-.paragraphTitle {
-  font-family: "Beachday";
-  font-size: 6rem;
-}
-
-.paragraphTitle3 {
-  font-family: "Beachday";
-  font-size: 4rem;
-}
-
-.paragraphContent {
-  font-family: "Beachday";
-  font-size: 2rem;
-}
-
-.paragraphTitlePirate {
-  font-family: "Pirate";
-  font-size: 6rem;
-}
-
-.paragraphContentPirate {
-  font-family: "Pirate";
-  font-size: 1.2rem;
-}
-
-.bioTitle {
-  font-family: "Beachday";
-  font-size: 4rem;
-}
-.bioContent {
-  font-family: "Beachday";
-  font-size: 1.3rem;
-}
-
 /*Backstory*/
 #backstory-page {
   background-image: url('../src/assets/chest-background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   height: 100%;
 }
 
 #sand-gradient-pages {
   background-image: url('../src/assets/sand-gradient-background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   height: 100%;
 }
-
-/*!*Roadmap*!*/
-/*#roadmap-page {*/
-/*  background-image: url('../src/assets/sand-gradient-background.png');*/
-/*  background-size: cover;*/
-/*  height: 100%;*/
-/*}*/
-
 .roadmap-resize {
   width: 75rem;
   height: auto;
@@ -258,23 +250,11 @@ button {
   font-family: "Pirate";
   font-size: 3rem;
 }
-.roadmapParagraph {
-  font-family: "Beachday";
-  font-size: 1rem;
-}
-.roadmap-item {
-  font-family: "Pirate";
-}
+
 .percentage {
   font-size: 4rem;
 }
 
-/*FAQ Page*/
-/*#faq-page {*/
-/*  background-image: url('../src/assets/sand-gradient-background.png');*/
-/*  background-position: center top;*/
-/*  background-size: 100% auto;*/
-/*}*/
 .faqBackground {
   background-image: url('../src/assets/sandBackground.jpg');
   background-position: center top;
@@ -289,29 +269,8 @@ button {
   background-size: 100% auto;
 }
 
-/*Team*/
-/*#team-page {*/
-/*  background-image: url('../src/assets/sand-gradient-background.png');*/
-/*  background-position: center top;*/
-/*  background-size: 100% auto;*/
-/*}*/
 .team-member {
   flex-shrink: 1;
-}
-
-/*Discord Banner*/
-#join-discord-banner {
-  background-image: url('../src/assets/dolphin-blurb.png');
-  background-size: cover;
-  width: 100%;
-}
-#discord-invite {
-  max-width: 40%;
-  max-height: 40%;
-}
-
-.added-items {
-  float: left;
 }
 
 .vertical-center {
@@ -322,15 +281,6 @@ button {
   align-items: center;
 }
 
-.gif-container {
-  position: relative;
-}
-
 .social-links {
   margin-bottom: -10rem;
-}
-
-#footer {
-  background-image: url('../src/assets/sand.jpg');
-  background-size: cover;
 }
