@@ -1,5 +1,4 @@
 import React from 'react';
-import TwitterLink from "./twitter_link";
 import TwitterIcon from '../assets/ButtonImages/twitter.png'
 
 interface TeamMemberProps {
