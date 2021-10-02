@@ -50,7 +50,6 @@ const FAQPage: React.FC<FAQPageProps> = props => {
                     <div>
                         <p className="paragraphTitle3 mb-5">Frequently Asked Questions:</p>
                     </div>
-                    <hr/>
                     <div className="accordion container" id="accordionFAQ">
                         {faqList.map((faq, idx) => {
                             return (

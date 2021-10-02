@@ -3,7 +3,6 @@ import CastleVideo from '../assets/castle-vid.mp4'
 import TabLink from "./tab_link";
 import BackstoryImage from "../assets/fonts/Backstoryv2.png";
 import RoadMapImage from "../assets/fonts/roadmap.png";
-import SignLogo from "../assets/sign.png";
 import FAQImage from "../assets/fonts/FAQ.png";
 import TeamImage from "../assets/fonts/Team.png";
 
@@ -14,7 +13,7 @@ interface BackgroundVideoProps {
 const BackgroundVideo: React.FC<BackgroundVideoProps> = props => {
     const introParagraphTitle = 'Dive into the Lagoon'
     const introParagraphText = '9010 Dolphins chilling in an enormous sunken castle. A limited NFT collection where the token doubles as a membership to the lax dolphin lagoon. Dolphins are minted as ERC-721 tokens. Each of these cost .04 ETH to mint.'
-    const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
+    // const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
 
 
     const renderTabLinks = () => {
