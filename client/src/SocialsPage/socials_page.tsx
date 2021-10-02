@@ -1,6 +1,5 @@
 import React from "react";
 import DiscordLogo from "../assets/ButtonImages/discord.png";
-import TwitterLink from "../TeamPage/twitter_link";
 import DolphinBanner from "../assets/banner.png";
 
 import TwitterIcon from '../assets/ButtonImages/twitter.png'
