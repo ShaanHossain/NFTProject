@@ -40,6 +40,7 @@ const BackgroundVideo: React.FC<BackgroundVideoProps> = props => {
                         <p className="paragraphTitle2 text-white">{introParagraphTitle}</p>
                     </div>
                     <div id="intro-paragraph" className="paragraphContent2 mx-5">
+
                         <p className="text-white">{introParagraphText}</p>
                     </div>
             </div>
