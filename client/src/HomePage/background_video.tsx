@@ -37,9 +37,10 @@ const BackgroundVideo: React.FC<BackgroundVideoProps> = props => {
                 {renderTabLinks()}
                 {/*Intro Paragraph*/}
                 <div className="paragraphTitle2 my-5">
-                        <p className="text-white">{introParagraphTitle}</p>
+                        <p className="paragraphTitle2 text-white">{introParagraphTitle}</p>
                     </div>
-                    <div id="intro-paragraph" className="paragraphContent2 my-5 mx-5">
+                    <div id="intro-paragraph" className="paragraphContent2 mx-5">
+
                         <p className="text-white">{introParagraphText}</p>
                     </div>
             </div>

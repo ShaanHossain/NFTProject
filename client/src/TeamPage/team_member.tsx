@@ -21,8 +21,8 @@ const TeamMember: React.FC<TeamMemberProps> = props => {
                 {/*Name*/}
                 <div className="bioTitle mb-3">
                     {props.name}
-                        <button className="btn twitter-link" onClick={openTwitter} data-toggle="tooltip" data-placement="top" title={props.twitterLink}>
-                            <img className="twitter-icon" src={TwitterIcon} alt="Twitter Logo" />
+                        <button className="btn twitter-link2" onClick={openTwitter} data-toggle="tooltip" data-placement="top" title={props.twitterLink}>
+                            <img className="twitter-icon2" src={TwitterIcon} alt="Twitter Logo" />
                         </button>
                 </div>
 
