@@ -1,3 +1,68 @@
+.paragraphTitle {
+  font-family: "Beachday";
+  font-size: 6rem;
+}
+
+.paragraphTitle2 {
+  font-family: "Beachday";
+  font-size: 10rem;
+}
+
+.paragraphTitle3 {
+  font-family: "Beachday";
+  font-size: 4rem;
+}
+
+.paragraphContent {
+  font-family: "Beachday";
+  font-size: 2rem;
+}
+
+.paragraphContent2 {
+  font-family: "Beachday";
+  font-size: 3rem;
+}
+
+.paragraphTitlePirate {
+  font-family: "Pirate";
+  font-size: 6rem;
+}
+
+.paragraphContentPirate {
+  font-family: "Pirate";
+  font-size: 1.2rem;
+}
+
+.bioTitle {
+  font-family: "Beachday";
+  font-size: 4rem;
+}
+.bioContent {
+  font-family: "Beachday";
+  font-size: 1.3rem;
+}
+
+.title {
+  font-family: "Beachday";
+  font-size: 3rem;
+}
+
+.title2 {
+  font-family: "Beachday";
+  font-size: 2rem;
+}
+
+.textContent {
+  font-family: "Beachday";
+  font-size: 1rem;
+}
+/*Text is overrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -64,38 +129,35 @@
   font-family: "Wood";
 }
 
+@font-face {
+  font-family: "Sand";
+  src: local('Sand'), url('../src/assets/fonts/sandscrape.ttf') format('truetype');
+}
+
+.sandFont {
+  font-family: "Sand";
+}
+
+.sandDarkColor {
+  color: #877347;
+  font-size: 1.5rem;
+}
+
+.sandDarkColorSmall {
+  color: #877347;
+  font-size: 1rem;
+}
+
+
 html {
   margin: 0px;
   height: 100%;
+  font-size:100%;
 }
 
 button {
   background-size: cover;
   background-color: transparent;
-}
-
-.btn-xlarge {
-  padding: 18px 28px;
-  font-size: 4rem;
-  line-height: normal;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-}
-
-.title {
-  font-family: "Beachday";
-  font-size: 3rem;
-}
-
-.title2 {
-  font-family: "Beachday";
-  font-size: 2rem;
-}
-
-.textContent {
-  font-family: "Beachday";
-  font-size: 1rem;
 }
 
 .invisible {
@@ -111,187 +173,310 @@ button {
   padding:0 ! important;
 }
 
-/*HomePage*/
-/*#home-page {*/
-/*  background-image: url('../src/assets/castle-image.jpg');*/
-/*  background-size: cover;*/
-/*  height: 100%;*/
-/*}*/
-#videoBG {
-  position:fixed;
-  z-index: -1;
-
+/*Page specific stuff starts happening!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#videoDiv2 {width:100%; height: auto; margin:auto; display:block; position: relative;} /* This has been changed */
+#video2{
   width:100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#video-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
   height: 100%;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  #videoBG {
-    width:100%;
-    height: auto;
-  }
-}
 
-@media (max-aspect-ratio: 16/9) {
-  #videoBG {
-    width:auto;
-    height: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  #videoBG {
-    display: none;
-  }
-  #home-page {
-    background: url('../src/assets/castle-vid.mp4');
-    background-size: cover;
-  }
-}
-
-#tabs {
-  flex: 1;
-}
-#intro {
-  flex:1
-}
-
-.tabLink {
-  font-family: "Wood", serif;
-  font-size: 2.75rem;
-  color: #B07C4F;
-}
-#logo-tabLink {
-  background-image: url('../src/assets/ButtonImages/sign.png');
-  background-size: cover;
-  width: 5%;
-  z-index: 1;
-}
-
-#logo-button {
-  max-width: 6%;
-  max-height: 6%;
-}
-#logo-button-image {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.paragraphTitle2 {
-  font-family: "Beachday";
-  font-size: 10rem;
-}
-
-.paragraphContent2 {
-  font-family: "Beachday";
-  font-size: 3rem;
-}
-
-.paragraphTitle {
-  font-family: "Beachday";
-  font-size: 6rem;
-}
-
-.paragraphTitle3 {
-  font-family: "Beachday";
-  font-size: 4rem;
-}
-
-.paragraphContent {
-  font-family: "Beachday";
-  font-size: 2rem;
-}
-
-.paragraphTitlePirate {
-  font-family: "Pirate";
-  font-size: 6rem;
-}
-
-.paragraphContentPirate {
-  font-family: "Pirate";
-  font-size: 1.2rem;
-}
-
-.bioTitle {
-  font-family: "Beachday";
-  font-size: 4rem;
-}
-.bioContent {
-  font-family: "Beachday";
-  font-size: 1.3rem;
+#intro-paragraph {
+  width: 66%;
 }
 
 /*Backstory*/
 #backstory-page {
   background-image: url('../src/assets/chest-background.png');
+  background-repeat: no-repeat;
+  position: relative;
   background-size: cover;
   height: 100%;
 }
 
-#backstory-text {
+.backStoryParagraphTitle {
+  font-family: "Beachday";
+  font-size: 6rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*Roadmap*/
-#roadmap-page {
+.paragraphContentBackstory {
+  font-family: "Beachday";
+  font-size: 2.5rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*.backstory {*/
+/*  font-family: "Beachday";*/
+/*  width: 66%;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  font-family: "Beachday";*/
+/*  font-size: 2.5rem;*/
+/*  width: 66%;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  margin-left: 25rem;*/
+/*}*/
+
+@media only screen and (min-width: 1650px) and (max-width: 1800px) {
+  .backStoryParagraphTitle {
+    font-family: "Beachday";
+    font-size: 6rem;
+  }
+
+  .paragraphContentBackstory {
+    font-family: "Beachday";
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  /*HomePage*/
+  .paragraphTitle2 {
+    font-family: "Beachday";
+    font-size: 6rem;
+  }
+  .paragraphContent2 {
+    font-family: "Beachday";
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1650px) and (max-width: 2120px) {
+  .paragraphTitle {
+    font-family: "Beachday";
+    font-size: 5rem;
+  }
+
+  .paragraphContent {
+    font-family: "Beachday";
+    font-size: 1.66rem;
+  }
+
+  .backStoryParagraphTitle {
+    font-family: "Beachday";
+    font-size: 5rem;
+  }
+
+  .paragraphContentBackstory {
+    font-family: "Beachday";
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 995px) and (max-width: 1650px) {
+  /*BackstoryPage*/
+  .paragraphTitle {
+    font-family: "Beachday";
+    font-size: 3rem;
+  }
+
+  .paragraphContent {
+    font-family: "Beachday";
+    font-size: 1rem;
+  }
+
+  .backStoryParagraphTitle {
+    font-family: "Beachday";
+    font-size: 6rem;
+  }
+
+  .paragraphContentBackstory {
+    font-family: "Beachday";
+    font-size: 3rem;
+  }
+  #backstory-page {
+    background-image: url('../src/assets/short_chest.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  /*BackstoryPage*/
+  .paragraphTitle {
+    font-family: "Beachday";
+    font-size: 2rem;
+  }
+
+  .paragraphContent {
+    font-family: "Beachday";
+    font-size: .66rem;
+  }
+}
+
+.tabImage {
+  width: 100%;
+  height: auto;
+}
+
+
+/*@media screen and  (max-width: 600px) {*/
+/*  #backstory-page {*/
+/*    background-image: url('../src/assets/vert-chest.jpeg');*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    position: relative;*/
+/*    height: 100%;*/
+/*    width: auto;*/
+/*  }*/
+/*}*/
+
+#sand-gradient-pages {
   background-image: url('../src/assets/sand-gradient-background.png');
-  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+.roadmap-resize {
+  width: 75rem;
+  height: auto;
 }
 
-#roadmap-map {
-  background-image: url('../src/assets/map.png');
-  background-size: cover;
-  height: 80%;
+@media only screen and (min-width: 1000px) and (max-width: 1276px)  {
+  .roadmap-resize {
+    width: 60rem;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+  .roadmap-resize {
+    width: 40rem;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 505px) and (max-width: 750px) {
+  .roadmap-resize {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .roadmap-resize {
+    width: 20rem;
+    height: auto;
+  }
 }
 
 .roadmapTitle {
   font-family: "Pirate";
   font-size: 3rem;
 }
-.roadmapParagraph {
-  font-family: "Beachday";
-  font-size: 1rem;
-}
-.roadmap-item {
-  font-family: "Pirate";
-}
+
 .percentage {
   font-size: 4rem;
 }
 
-/*FAQ Page*/
-
-
-
-/*Box*/
-#box-page {
-  background-image: url('../src/assets/sand-gradient-background.png');
+.faqBackground {
+  background-image: url('../src/assets/sandBackground.jpg');
   background-position: center top;
   background-size: 100% auto;
 }
 
-/*Team*/
-#team-page {
-  background-image: url('../src/assets/sand-gradient-background.png');
-  background-position: center top;
-  background-size: 100% auto;
-}
-/*.team-member {*/
-/*  flex-shrink: 1;*/
-/*}*/
-
-/*Discord Banner*/
-#join-discord-banner {
-  background-image: url('../src/assets/dolphin-blurb.png');
-  background-size: cover;
-  width: 100%;
-}
-#discord-invite {
-  max-width: 130%;
-  max-height: 130%;
+@media only screen and (min-width: 1550px) and (max-width: 1950px) {
+  .bioTitle {
+    font-family: "Beachday";
+    font-size: 3rem;
+  }
+  .bioContent {
+    font-family: "Beachday";
+    font-size: 1rem;
+  }
 }
 
-.added-items {
-  float: left;
+@media only screen and (min-width: 1400px) and (max-width: 1550px) {
+  .bioTitle {
+    font-family: "Beachday";
+    font-size: 3rem;
+  }
+  .bioContent {
+    font-family: "Beachday";
+    font-size: 1rem;
+  }
+  .team-pic {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.twitter-icon {
+  width: 4rem;
+  height: auto;
+}
+
+@media only screen and (min-width: 1110px) and (max-width: 1400px) {
+  .bioTitle {
+    font-family: "Beachday";
+    font-size: 2.4rem;
+  }
+  .bioContent {
+    font-family: "Beachday";
+    font-size: 0.8rem;
+  }
+  .twitter-icon {
+    width: 2.66rem;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .bioTitle {
+    font-family: "Beachday";
+    font-size: 3rem;
+  }
+  .bioContent {
+    font-family: "Beachday";
+    font-size: 1.33rem;
+    width: 50%;
+  }
+  .twitter-icon {
+    width: 4rem;
+    height: auto;
+  }
+  .members {
+    flex-direction: column;
+  }
+  .team-pic {
+    max-width: 30rem;
+    max-height: 30rem;
+  }
+}
+
+.team-pic {
+  width: 80%;
+  height: auto;
+}
+
+
+
+.twitter-link {
+  margin: 0;
 }
 
 .vertical-center {
@@ -302,22 +487,6 @@ button {
   align-items: center;
 }
 
-.gif-container {
-  position: relative;
-}
-
-
-#dolphin-gif {
-  max-width: 80%;
-  max-height: 80%;
-}
-
-.collapseBody {
-  background-image: url('../src/assets/sand.jpg');
-  background-size: cover;
-}
-
-#footer {
-  background-image: url('../src/assets/sand.jpg');
-  background-size: cover;
+.social-links {
+  margin-bottom: -10rem;
 }
