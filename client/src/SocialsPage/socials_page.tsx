@@ -1,6 +1,7 @@
 import React from "react";
 import DiscordLogo from "../assets/ButtonImages/discord.png";
 import DolphinBanner from "../assets/banner.png";
+
 import TwitterIcon from '../assets/ButtonImages/twitter.png'
 
 interface SocialsPageProps {
@@ -13,9 +14,11 @@ const SocialsPage: React.FC<SocialsPageProps> = props => {
     const openDiscord = () => {
         window.open(discordURL, "_blank");
     }
+
     const openTwitter = () => {
         window.open(twitterURL, "_blank");
     }
+
     const placeHolder = 'afds;ifadhs;fah;ofhasofha;ohiohiasfohaohsfo;ho;hiohio;ahfo;dasfha;sfha;osfh;oasdf;aosfhha;oih;oih;oizXCjkA"CJAPOC'
 
     return (
@@ -23,6 +26,7 @@ const SocialsPage: React.FC<SocialsPageProps> = props => {
            <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
            <div className="mb-5">
                <p className="paragraphTitle2">Our Socials</p>
+
            </div>
            <div className="d-flex flex-column " >
                <div className="social-links d-flex justify-content-center mt-5">
