@@ -357,6 +357,14 @@ button {
     font-family: "Beachday";
     font-size: 5rem;
   }
+}
+
+/*This is for The backstoryh page*/
+@media only screen and (min-width: 1650px) and (max-width: 2120px) {
+  .paragraphTitle {
+    font-family: "Beachday";
+    font-size: 5rem;
+  }
 
 /*This is for The backstoryh page*/
 @media only screen and (min-width: 1650px) and (max-width: 2120px) {
