@@ -1,3 +1,7 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .twitter-icon {
   width: 15rem;
@@ -217,7 +221,7 @@ button {
 
 /*Backstory*/
 #backstory-page {
-  background: url('../src/assets/chest-background.png') no-repeat center center fixed;
+  background: url('../src/assets/wide-chest-3.jpeg') no-repeat center center;
   /*background-repeat: no-repeat;*/
   /*position: relative;*/
   /*background-size: cover;*/
@@ -296,10 +300,11 @@ button {
     font-size: 2rem;
   }
 
-  .twitter-icon2 {
+  .twitter-icon {
     width: 7rem;
     height: auto;
   }
+
   .discord-icon {
     width: 7rem;
     height: auto;
@@ -330,7 +335,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 515px) and (max-width: 650px) {
   .paragraphTitle2 {
     font-family: "Beachday";
     font-size: 3rem;
@@ -352,6 +357,30 @@ button {
     height: auto;
   }
 }
+@media only screen and (max-width: 515px) {
+  .paragraphTitle2 {
+    font-family: "Beachday";
+    font-size: 1.75rem;
+    margin-bottom: 0;
+  }
+  .paragraphContent2 {
+    font-family: "Beachday";
+    font-size: .66rem;
+  }
+  .twitter-icon {
+    width: 5rem;
+    height: auto;
+  }
+  .twitter-icon2 {
+    width: 4rem;
+    height: auto;
+  }
+  .discord-icon {
+    width: 5rem;
+    height: auto;
+  }
+}
+
 @media only screen and (min-width: 1650px) and (max-width: 2120px) {
   .paragraphTitle {
     font-family: "Beachday";
@@ -359,7 +388,7 @@ button {
   }
 }
 
-/*This is for The backstoryh page*/
+/*This is for The backstory page*/
 @media only screen and (min-width: 1650px) and (max-width: 2120px) {
   .paragraphTitle {
     font-family: "Beachday";
@@ -409,42 +438,30 @@ button {
 
   .paragraphContentBackstory {
     font-family: "Beachday";
-    font-size: 3rem;
-  }
-  /*#backstory-page {*/
-  /*  background-image: url('../src/assets/short_chest.jpeg');*/
-  /*  background-repeat: no-repeat;*/
-  /*  background-size: cover;*/
-  /*  position: relative;*/
-  /*}*/
-}
-
-@media screen and (max-width: 995px) {
-  /*BackstoryPage*/
-  .paragraphTitle {
-    font-family: "Beachday";
     font-size: 2rem;
+    margin-bottom: 20rem;
   }
-
-  .paragraphContent {
-    font-family: "Beachday";
-    font-size: .66rem;
+  #backstory-page {
+    background-image: url('../src/assets/wide-chest-3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
 }
+
 
 .tabImage {
   width: 100%;
   height: auto;
 }
 
-@media screen and  (max-width: 800px) {
-  /*#backstory-page {*/
-  /*  background-image: url('../src/assets/vert-chest.jpeg');*/
-  /*  background-size: cover;*/
-  /*  background-attachment: fixed;*/
-  /*  background-repeat: no-repeat;*/
-  /*  background-position: center;*/
-  /*}*/
+@media screen and (min-width: 700px) and  (max-width: 995px) {
+  #backstory-page {
+    background-image: url('../src/assets/wide-chest-3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
   .backStoryParagraphTitle {
     font-family: "Beachday";
     font-size: 5rem;
@@ -455,7 +472,7 @@ button {
   }
   .paragraphContentBackstory {
     font-family: "Beachday";
-    font-size: 2.1rem;
+    font-size: 1.2rem;
     width: 80%;
     display: flex;
     align-items: center;
@@ -466,20 +483,48 @@ button {
   }
 }
 
-@media screen and  (max-width: 1500px) {
+@media screen and  (max-width: 700px) {
   #backstory-page {
-    background-image: url('../src/assets/vert-chest.jpeg');
-    /*background-size: cover;*/
-    /*!*background-attachment: fixed;*!*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
-    background-position: center center;
+    background-image: url('../src/assets/wide-chest-3.jpeg');
     background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
     background-size: cover;
-    height: 100%;
+    position: relative;
+  }
+  .backStoryParagraphTitle {
+    font-family: "Beachday";
+    font-size: 3rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .paragraphContentBackstory {
+    font-family: "Beachday";
+    font-size: 1.2rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabImage {
+    display: none;
   }
 }
+
+/*@media screen and  (max-width: 1500px) {*/
+/*  #backstory-page {*/
+/*    background-image: url('../src/assets/vert-chest.jpeg');*/
+/*    !*background-size: cover;*!*/
+/*    !*!*background-attachment: fixed;*!*!*/
+/*    !*background-repeat: no-repeat;*!*/
+/*    !*background-position: center;*!*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    !*background-attachment: fixed;*!*/
+/*    background-size: cover;*/
+/*    height: 100%;*/
+/*  }*/
+/*}*/
 
 #sand-gradient-pages {
   background-image: url('../src/assets/sand-gradient-background.png');
@@ -573,7 +618,7 @@ button {
     font-family: "Beachday";
     font-size: 0.8rem;
   }
-  .twitter-icon {
+  .twitter-icon2 {
     width: 2.66rem;
     height: auto;
   }
@@ -582,15 +627,25 @@ button {
 @media only screen and (max-width: 1110px) {
   .bioTitle {
     font-family: "Beachday";
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .bioContent {
     font-family: "Beachday";
     font-size: 1.33rem;
     width: 50%;
   }
-  .twitter-icon {
+  .twitter-icon2 {
     width: 4rem;
+    height: auto;
+  }
+
+  .discord-icon {
+    width: 7rem;
+    height: auto;
+  }
+
+  .twitter-icon {
+    width: 7rem;
     height: auto;
   }
   .members {
@@ -622,34 +677,34 @@ button {
     font-family: "Beachday";
     font-size: 0.8rem;
   }
-  .twitter-icon {
+  .twitter-icon2 {
     width: 2.66rem;
     height: auto;
   }
 }
 
-@media only screen and (max-width: 1110px) {
-  .bioTitle {
-    font-family: "Beachday";
-    font-size: 3rem;
-  }
-  .bioContent {
-    font-family: "Beachday";
-    font-size: 1.33rem;
-    width: 50%;
-  }
-  .twitter-icon {
-    width: 4rem;
-    height: auto;
-  }
-  .members {
-    flex-direction: column;
-  }
-  .team-pic {
-    max-width: 30rem;
-    max-height: 30rem;
-  }
-}
+/*@media only screen and (max-width: 1110px) {*/
+/*  .bioTitle {*/
+/*    font-family: "Beachday";*/
+/*    font-size: 3rem;*/
+/*  }*/
+/*  .bioContent {*/
+/*    font-family: "Beachday";*/
+/*    font-size: 1.33rem;*/
+/*    width: 50%;*/
+/*  }*/
+/*  .twitter-icon {*/
+/*    width: 4rem;*/
+/*    height: auto;*/
+/*  }*/
+/*  .members {*/
+/*    flex-direction: column;*/
+/*  }*/
+/*  .team-pic {*/
+/*    max-width: 30rem;*/
+/*    max-height: 30rem;*/
+/*  }*/
+/*}*/
 
 .social-links {
   margin-bottom: -10rem;

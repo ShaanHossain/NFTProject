@@ -25,7 +25,7 @@ const SocialsPage: React.FC<SocialsPageProps> = props => {
        <div>
            <div className="invisible"><p className="paragraphContent text-white d-flex flex-wrap mt-5">{placeHolder}</p></div>
            <div className="mb-5">
-               <p className="paragraphTitle2">Our Socials</p>
+               <p className="paragraphTitle3">Our Socials</p>
 
            </div>
            <div className="d-flex flex-column " >
